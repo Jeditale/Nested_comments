@@ -28,7 +28,7 @@ First, clone this repository or download the source code, and then run the follo
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone <https://github.com/Jeditale/Nested_comments.git>
 cd NWArchive
 
 # Install Node.js dependencies
