@@ -29,7 +29,7 @@ First, clone this repository or download the source code, and then run the follo
 ```bash
 # Clone the repository
 git clone <https://github.com/Jeditale/Nested_comments.git>
-cd NWArchive
+cd Nested_comments
 
 # Install Node.js dependencies
 npm install
