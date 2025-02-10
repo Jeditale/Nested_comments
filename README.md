@@ -33,3 +33,14 @@ cd Nested_comments
 
 # Install Node.js dependencies
 npm install
+
+### Run JSON (MockAPI)
+```
+npx json-server db.json --port 3000
+```
+
+### Start the Angular App
+```
+ng serve
+```
+
