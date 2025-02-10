@@ -26,14 +26,14 @@ Before you begin, ensure you have the following installed:
 
 First, clone this repository or download the source code, and then run the following commands to install all the dependencies:
 
-```bash
+```
 # Clone the repository
 git clone <https://github.com/Jeditale/Nested_comments.git>
 cd Nested_comments
 
 # Install Node.js dependencies
 npm install
-
+```
 ### Run JSON (MockAPI)
 ```
 npx json-server db.json --port 3000
