@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: black;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease;
+}
+
+// Hide controls when not hovered
+.video-container:not(:hover) .controls {
+  opacity: 0;
+}
+
+// General button styling
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  border-radius: 4px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+// Play/Pause button
+.play-pause {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+// Progress bar
+.progress-bar-container {
+  flex: 1;
+  margin: 0 20px; // Adds more spacing around the progress bar
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  input[type="range"] {
+    width: 100%;
+    appearance: none;
+    background: transparent;
+    outline: none;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: #ffffff;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #ff0000;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px;
+  }
+}
+
+// Volume Controls
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.volume button {
+  font-size: 16px;
+}
+
+.volume-slider {
+  width: 100px;
+  margin-right: 65px; // Moves the volume bar slightly inward for better spacing
+
+}
+
+.volume input[type="range"] {
+  width: 100%;
+}
+
+.fullscreen {
+  font-size: 16px;
+}

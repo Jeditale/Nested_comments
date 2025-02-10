@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { VideoPlayerModule } from './video-player/video-player.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     CommentsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    VideoPlayerModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

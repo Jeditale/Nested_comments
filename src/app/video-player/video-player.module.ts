@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VideoPlayerComponent } from './video-player/video-player.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -9,7 +10,9 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
     VideoPlayerComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    FormsModule,
+  ],
+  exports: [VideoPlayerComponent]
 })
 export class VideoPlayerModule { }

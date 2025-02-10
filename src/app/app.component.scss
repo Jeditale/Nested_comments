@@ -1,98 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
-.comments {
+// Global Styles
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 3rem;
   margin-top: 20px;
 }
 
-.comments-title {
-  font-size: 30px;
-  margin-bottom: 20px;
+video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.comments-container {
-  margin-top: 40px;
-}
-
-.comment-form-title {
-  font-size: 22px;
-}
-
-.comment-form-textarea {
+video-container {
   width: 100%;
-  height: 80px;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  border: 1px solid rgb(107, 114, 12);
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-.comment-form-button {
-  font-size: 16px;
-  padding: 8px 16px;
-  background: rgb(59, 130, 246);
-  border-radius: 8px;
-  color: white;
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-.comment-form-button:hover:enabled {
+.controls button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 5px;
+  border-radius: 5px;
   cursor: pointer;
-  background: rgb(37, 99, 235);
+  transition: background-color 0.3s;
 }
 
-.comment-form-button:disabled {
-  opacity: 0.7;
-  cursor: default;
+.controls button:hover {
+  background-color: #2980b9;
 }
 
-.comment-form-cancel-button {
-  margin-left: 10px;
+.comments {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .comment {
-  display: flex;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.comment-image-container {
-  margin-right: 12px;
+.comment-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-.comment-image-container img {
-  border-radius: 50px;
+.comment-body {
+  font-size: 1rem;
+  color: #7f8c8d;
 }
 
-.comment-right-part {
-  width: 100%;
+.comment-footer {
+  font-size: 0.9rem;
+  text-align: right;
+  color: #95a5a6;
 }
 
-.comment-content {
-  display: flex;
-}
-
-.comment-author {
-  margin-right: 8px;
-  font-size: 20px;
-  color: rgb(59, 130, 246);
-}
-
-.comment-text {
-  font-size: 18px;
-}
-
-.comment-actions {
-  display: flex;
-  font-size: 12px;
-  color: rgb(51, 51, 51);
+.comment-button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 8px;
 }
 
-.comment-action {
-  margin-right: 8px;
+.comment-button:hover {
+  background-color: #27ae60;
 }
 
-.comment-action:hover {
-  text-decoration: underline;
+.comment-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
 }
 
-.replies {
+.comment-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+// Centering Content (optional)
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
